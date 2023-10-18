@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        h2.static {
+             position: static;
+             border: 4px double greenyellow;
+             color: brown;
+        }
+        h3.relative {
+             position: relative;
+             border: 4px double rgb(43, 68, 4);
+             color: rgb(70, 218, 132);
+        }
+        h2.fixed {
+             position: fixed;
+             width: 300px;
+             padding: 10px;
+             bottom: 0;
+             right: 0;
+             border: 4px solid rgb(38, 6, 112);
+             color: rgb(137, 88, 14);
+        }
+        div.relative {
+        position: relative;
+        width: 300px;
+        height: 700px;
+        border: 3px solid #73AD21;
+        padding: 10px;
+       } 
+
+        div.absolute {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        width: 300px;
+        height: 200px;
+        border: 3px solid #73AD21;
+        padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1>Position:static</h1>
+    <h2 class="static">Always positioned according to the normal flow of the page</h2>
+    <h3 class="relative">An element with position: relative; is positioned relative to its normal position.</h3>
+    <h2 class="fixed">An element with position: fixed; is positioned relative to the viewport,
+         which means it always stays in the same place even if the page is scrolled. The top,
+          right, bottom, and left properties are used to position the element.
+          
+        </h2>
+    <div class="absolute">An element with position: fixed; is positioned relative to the viewport,
+            which means it always stays in the same place even if the page is scrolled. The top,
+             right, bottom, and left properties are used to position the element.
+             <div>This is absolute element depends on relative element.</div>
+    </div>
+</body>
+</html>
